@@ -1,0 +1,79 @@
+Questions 2(a), 2(b), 2(c): Reporting dataset statistics
+The processed sentence is ['i', 'love', 'eecs', '445', 'it', 's', 'my', 'favorite', 'course']
+d: 2815
+Average number of nonzero features: 26.070815450643778
+Most common word: the
+--------------------------------------------
+Question 3.1(b): Linear SVM with grid search
+
+Metric: accuracy
+Best c: 0.010000
+CV Score 0.8391
+
+Metric: f1_score
+Best c: 0.010000
+CV Score 0.8311
+
+Metric: auroc
+Best c: 0.010000
+CV Score 0.9126
+
+Metric: precision
+Best c: 0.100000
+CV Score 0.8826
+
+Metric: sensitivity
+Best c: 0.001000
+CV Score 0.9702
+
+Metric: specificity
+Best c: 0.100000
+CV Score 0.8927
+Question 3.1(e): Displaying the most positive and negative words
+coeff: 0.8474 word: great
+coeff: 0.6695 word: actors
+coeff: 0.5118 word: love
+coeff: 0.4830 word: actor
+coeff: 0.4634 word: favorite
+coeff: -0.3315 word: waste
+coeff: -0.3753 word: t
+coeff: -0.3897 word: boring
+coeff: -0.4376 word: bad
+coeff: -0.5242 word: not
+Question 3.2(a): Linear SVM with L1-penalty using grid search and auroc metric
+Best c: 0.100000
+CV Score 0.9040
+Test Performance: 0.9284
+Question 3.3: Quadratic SVM
+3.3(a)i: Quadratic SVM with grid search and auroc metric:
+Best c: 10.000000 Best coeff (r): 10.00000
+Test Performance: 0.9374
+3.3(a)ii: Quadratic SVM with random search and auroc metric:
+Best c: 27.455049 Best coeff (r): 1.60373
+Test Performance: 0.9293
+--------------------------------------------
+Question 4.1: Linear SVM with imbalanced class weights
+Test Performance on metric accuracy: 0.5769
+Test Performance on metric f1_score: 0.7009
+Test Performance on metric auroc: 0.9172
+Test Performance on metric precision: 0.5421
+Test Performance on metric sensitivity: 0.9915
+Test Performance on metric specificity: 0.1624
+Question 4.2: Linear SVM on an imbalanced data set
+Test Performance on metric accuracy: 0.8014
+Test Performance on metric f1_score: 0.8897
+Test Performance on metric auroc: 0.8848
+Test Performance on metric precision: 0.8014
+Test Performance on metric sensitivity: 1.0000
+Test Performance on metric specificity: 0.0000
+Question 4.3(b): Choosing appropriate class weights
+class_weight={-1: 9, 1: 5}
+Test Performance on metric accuracy: 0.9110
+Test Performance on metric f1_score: 0.9461
+Test Performance on metric auroc: 0.9325
+Test Performance on metric precision: 0.9194
+Test Performance on metric sensitivity: 0.9744
+Test Performance on metric specificity: 0.6552
+Question 5.1(d): Coefficients for 'actor' and 'actress'
+Coefficient for 'actor': 0.48297985119312176
+Coefficient for 'actress': -0.01402531535936923
